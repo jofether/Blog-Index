@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  color: #0f172a;
-  background-color: #f8fafc;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-}
-
+/* 1. COLOR BUG A: Body background set to pure white (same as cards). */
+/* Result: Users can't see where the card ends and the page begins (Loss of containment). */
+/* FIX: background-color: #f3f4f6; (gray-100) */
 body {
+  background-color: #ffffff; 
   margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
 }
