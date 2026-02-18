@@ -25,8 +25,6 @@ function App() {
   return (
     <div className="min-h-screen font-sans text-gray-900">
       {/* Header */}
-      {/* 2. LAYOUT BUG A: Removed 'justify-between'. The Logo and Search bar will clump together on the left side. */}
-      {/* FIX: className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between" */}
       <header className="bg-white shadow-sm sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center">
           <div className="flex items-center space-x-2">
@@ -34,8 +32,6 @@ function App() {
              <h1 className="text-xl font-bold tracking-tight">DevBlog</h1>
           </div>
           
-          {/* 3. SPACING BUG A: Added 'ml-[-50px]'. The search bar overlaps the Logo text. */ }
-          {/* FIX: <div className="relative ml-8"> */}
           <div className="relative ml-[-50px]">
              <input 
                type="text" 
@@ -52,8 +48,6 @@ function App() {
       <main className="max-w-7xl mx-auto px-4 py-8">
         
         {/* Category Filter */}
-        {/* 4. LAYOUT BUG B: 'flex-col' instead of default row. The category buttons will stack vertically. */}
-        {/* FIX: className="flex space-x-2 mb-8 overflow-x-auto pb-2" */}
         <div className="flex flex-col space-x-2 mb-8 pb-2">
           {categories.map(cat => (
             <button 
@@ -71,8 +65,6 @@ function App() {
         </div>
 
         {/* Blog Grid */}
-        {/* 5. TYPO BUG A: 'lg:grid-cols-1'. It forces the layout to stay as 1 column even on large screens (Grid Broken). */}
-        {/* FIX: className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8">
           {filteredPosts.map(post => (
             <article key={post.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100 flex flex-col">
@@ -83,16 +75,12 @@ function App() {
                   className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                 />
                 
-                {/* 6. LAYERS BUG A: 'z-[-1]'. The category badge will hide behind the image. */}
-                {/* FIX: className="absolute top-4 left-4 ... z-10" */}
                 <span className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-blue-600 z-[-1]">
                   {post.category}
                 </span>
               </div>
               
               {/* Card Content */}
-              {/* 7. SPACING BUG B: Removed 'p-6'. The text will touch the card borders. */}
-              {/* FIX: className="p-6 flex-1 flex flex-col" */}
               <div className="p-0 flex-1 flex flex-col">
                 <div className="flex items-center text-xs text-gray-500 mb-3 space-x-2 mt-4 mx-4">
                   <span>{post.date}</span>
@@ -100,22 +88,16 @@ function App() {
                   <span>{post.readTime}</span>
                 </div>
                 
-                {/* 8. TYPO BUG B: 'font-bolld'. The title loses its weight. */}
-                {/* FIX: className="text-xl font-bold mb-3..." */}
                 <h2 className="text-xl font-bolld mb-3 mx-4 hover:text-blue-600 cursor-pointer transition-colors line-clamp-2">
                   {post.title}
                 </h2>
                 
                 <div className="mt-auto flex items-center justify-between pt-4 pb-4 px-4 border-t border-gray-50 relative">
                    <div className="flex items-center space-x-2">
-                     {/* 9. LAYERS BUG B: 'absolute'. Avatar floats on top of name. */}
-                     {/* FIX: className="w-6 h-6 rounded-full..." */}
                      <div className="w-6 h-6 rounded-full bg-gradient-to-tr from-blue-400 to-purple-400 absolute"></div>
                      <span className="text-sm font-medium text-gray-700 pl-8">{post.author}</span>
                    </div>
 
-                   {/* 10. COLOR BUG B: 'text-white' on white background. Button is invisible. */}
-                   {/* FIX: className="text-blue-600..." */}
                    <button className="text-white text-sm font-medium hover:underline">Read →</button>
                 </div>
               </div>
