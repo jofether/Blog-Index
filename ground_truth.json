@@ -1,0 +1,105 @@
+{
+  "repository": "Blog Index",
+  "bugs": [
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 29,
+      "clean_code": "<header className=\"bg-white shadow-sm sticky top-0 z-50\">",
+      "buggy_code": "<header className=\"bg-white shadow-sm sticky top-0 z-10\">",
+      "css_selector": "header",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "margin",
+      "file_modified": "src/App.jsx",
+      "line_number": 37,
+      "clean_code": "          <div className=\"hidden md:flex gap-8\">",
+      "buggy_code": "          <div className=\"relative ml-[-50px]\">",
+      "css_selector": ".relative",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "flexbox",
+      "file_modified": "src/App.jsx",
+      "line_number": 53,
+      "clean_code": "        <div className=\"mb-10 flex gap-3 flex-wrap\">",
+      "buggy_code": "        <div className=\"flex flex-col space-x-2 mb-8 pb-2\">",
+      "css_selector": ".flex-col",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "bg-indigo-600",
+      "file_modified": "src/App.jsx",
+      "line_number": 58,
+      "clean_code": "                  ? 'bg-indigo-600 text-white'",
+      "buggy_code": "                  ? 'bg-blue-600 text-white'",
+      "css_selector": ".bg-blue-600",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "bg-gray-200",
+      "file_modified": "src/App.jsx",
+      "line_number": 59,
+      "clean_code": "                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'",
+      "buggy_code": "                  : 'bg-white text-gray-600 hover:bg-gray-100 border'",
+      "css_selector": ".bg-white",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layout",
+      "bug_type": "grid",
+      "file_modified": "src/App.jsx",
+      "line_number": 68,
+      "clean_code": "        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-12\">",
+      "buggy_code": "        <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">",
+      "css_selector": ".lg:grid-cols-1",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Spacing",
+      "bug_type": "height",
+      "file_modified": "src/App.jsx",
+      "line_number": 74,
+      "clean_code": "              <div className=\"w-full h-40 relative overflow-hidden\">",
+      "buggy_code": "              <div className=\"h-48 overflow-hidden relative group\">",
+      "css_selector": ".h-48",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Layers",
+      "bug_type": "z-index",
+      "file_modified": "src/App.jsx",
+      "line_number": 81,
+      "clean_code": "                <div className=\"inline-block px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold text-indigo-600 uppercase mb-3\">",
+      "buggy_code": "                <span className=\"absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-blue-600 z-[-1]\">",
+      "css_selector": ".z-[-1]",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Typo",
+      "bug_type": "font-bold",
+      "file_modified": "src/App.jsx",
+      "line_number": 91,
+      "clean_code": "                <h2 className=\"text-lg font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition line-clamp-2\">",
+      "buggy_code": "                <h2 className=\"text-xl font-bolld mb-3 mx-4 hover:text-blue-600 cursor-pointer transition-colors line-clamp-2\">",
+      "css_selector": ".font-bolld",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    },
+    {
+      "bug_category": "Color",
+      "bug_type": "background-color",
+      "file_modified": "src/index.css",
+      "line_number": 9,
+      "clean_code": "  background-color: #f8fafc;",
+      "buggy_code": "  background-color: #ffffff;",
+      "css_selector": "body",
+      "bounding_box": { "x": 0, "y": 0, "width": 0, "height": 0 }
+    }
+  ]
+}
