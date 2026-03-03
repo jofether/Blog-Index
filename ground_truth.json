@@ -20,8 +20,8 @@
       "line_number": 37,
       "clean_code": "          <div className=\"hidden md:flex gap-8\">",
       "buggy_code": "          <div className=\"relative ml-[-50px]\">",
-      "css_selector": ".relative",
-      "bounding_box": { "x": 83, "y": 16, "width": 256, "height": 38 }
+      "css_selector": "header [class*=\"gap-8\"], header [class*=\"ml-\"]",
+      "bounding_box": { "x": 16, "y": 0, "width": 400, "height": 80 }
     },
     {
       "comment": "Bug #3 - flexbox",
@@ -31,7 +31,7 @@
       "line_number": 53,
       "clean_code": "        <div className=\"mb-10 flex gap-3 flex-wrap\">",
       "buggy_code": "        <div className=\"flex flex-col space-x-2 mb-8 pb-2\">",
-      "css_selector": ".flex-col",
+      "css_selector": "main > div:first-of-type",
       "bounding_box": { "x": 16, "y": 102, "width": 1248, "height": 174 }
     },
     {
@@ -42,7 +42,7 @@
       "line_number": 58,
       "clean_code": "                  ? 'bg-indigo-600 text-white'",
       "buggy_code": "                  ? 'bg-blue-600 text-white'",
-      "css_selector": ".bg-blue-600",
+      "css_selector": "main button.text-white",
       "bounding_box": { "x": 16, "y": 102, "width": 1248, "height": 32 }
     },
     {
@@ -53,7 +53,7 @@
       "line_number": 59,
       "clean_code": "                  : 'bg-gray-200 text-gray-700 hover:bg-gray-300'",
       "buggy_code": "                  : 'bg-white text-gray-600 hover:bg-gray-100 border'",
-      "css_selector": ".bg-white",
+      "css_selector": "main button[class*=\"text-gray\"]",
       "bounding_box": { "x": 24, "y": 134, "width": 1240, "height": 34 }
     },
     {
@@ -64,7 +64,7 @@
       "line_number": 68,
       "clean_code": "        <div className=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-12\">",
       "buggy_code": "        <div className=\"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-8\">",
-      "css_selector": ".lg:grid-cols-1",
+      "css_selector": "main .grid",
       "bounding_box": {
         "x": 16,
         "y": 308,
@@ -80,7 +80,7 @@
       "line_number": 74,
       "clean_code": "              <div className=\"w-full h-40 relative overflow-hidden\">",
       "buggy_code": "              <div className=\"h-48 overflow-hidden relative group\">",
-      "css_selector": ".h-48",
+      "css_selector": "article div.overflow-hidden",
       "bounding_box": { "x": 21, "y": 386, "width": 1246, "height": 192 }
     },
     {
@@ -91,12 +91,12 @@
       "line_number": 81,
       "clean_code": "                <div className=\"inline-block px-3 py-1 bg-gray-100 rounded-full text-xs font-semibold text-indigo-600 uppercase mb-3\">",
       "buggy_code": "                <span className=\"absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-blue-600 z-[-1]\">",
-      "css_selector": ".z-[-1]",
+      "css_selector": "article [class*=\"rounded-full\"][class*=\"text-xs\"]",
       "bounding_box": {
-        "x": 33,
-        "y": 324,
-        "width": 89,
-        "height": 24
+        "x": 20,
+        "y": 300,
+        "width": 250,
+        "height": 150
       }
     },
     {
@@ -107,7 +107,7 @@
       "line_number": 91,
       "clean_code": "                <h2 className=\"text-lg font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition line-clamp-2\">",
       "buggy_code": "                <h2 className=\"text-xl font-bold mb-3 mx-4 hover:text-blue-600 cursor-pointer transition-colors line-clamp-2\">",
-      "css_selector": ".font-bold",
+      "css_selector": "article h2[class*=\"line-clamp-2\"]",
       "bounding_box": { "x": 33, "y": 545, "width": 1214, "height": 28 }
     },
     {
