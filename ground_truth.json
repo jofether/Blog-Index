@@ -8,7 +8,7 @@
       "bug_type": "z-index",
       "file_modified": "src/App.jsx",
       "line_number": 29,
-      "neg_code": "<header className=\"bg-white shadow-sm sticky top-0 z-50\">",
+      "neg_code": "<nav className=\"bg-white shadow-sm sticky top-0 z-50\">",
       "pos_code": "<header className=\"bg-white shadow-sm sticky top-0 z-10\">",
       "css_selector": "header",
       "bounding_box": { "x": 0, "y": 0, "width": 1280, "height": 720 }
